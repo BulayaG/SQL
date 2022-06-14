@@ -1,0 +1,14 @@
+CREATE TABLE Gloir_Store (Id INTEGER PRIMARY KEY,item TEXT, Color Text,Price INTEGER,Quantity INTEGER, Size INTEGER);
+
+INSERT INTO Gloir_Store VALUES(1,"Dress","black,white,Grey",250,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(2,"Jumsuit","black,White,Grey",350,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(3,"Blouse","black,White, Grey",50,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(4,"Skirt","black,white,Grey",75,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(5,"t-Shirt","black,White,Grey",35,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(6,"Pants","black,White,Grey",150,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(7,"Short","black,white,grey",45,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(8,"Robes","black,white,grey",65,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(9,"Sock","black,green,blue",15,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(10,"Leggings","black,Grey,Blue",25,20,"s,m,l");
+INSERT INTO Gloir_Store VALUES(11,"Sweatshirt","black,white,Grey",85,20,"s,m,l");
+SELECT * FROM Gloir_Store ORDER BY price asc;
