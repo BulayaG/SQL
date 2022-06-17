@@ -1,4 +1,5 @@
 --Create a grocery store database
+
 CREATE TABLE Gloir_Store (Id INTEGER PRIMARY KEY,item TEXT, Color Text,Price INTEGER,Quantity INTEGER, Size INTEGER);
 
 INSERT INTO Gloir_Store VALUES(1,"Dress","black,white,Grey",250,20,"s,m,l");
