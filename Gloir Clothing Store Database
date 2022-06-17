@@ -1,3 +1,4 @@
+--Create a grocery store database
 CREATE TABLE Gloir_Store (Id INTEGER PRIMARY KEY,item TEXT, Color Text,Price INTEGER,Quantity INTEGER, Size INTEGER);
 
 INSERT INTO Gloir_Store VALUES(1,"Dress","black,white,Grey",250,20,"s,m,l");
@@ -11,4 +12,14 @@ INSERT INTO Gloir_Store VALUES(8,"Robes","black,white,grey",65,20,"s,m,l");
 INSERT INTO Gloir_Store VALUES(9,"Sock","black,green,blue",15,20,"s,m,l");
 INSERT INTO Gloir_Store VALUES(10,"Leggings","black,Grey,Blue",25,20,"s,m,l");
 INSERT INTO Gloir_Store VALUES(11,"Sweatshirt","black,white,Grey",85,20,"s,m,l");
+
+--display the database ordered by price
+
 SELECT * FROM Gloir_Store ORDER BY price asc;
+
+--what is the avg price of items in the bulk section?
+SELECT AVG(price) "avg bulk item price" FROM Gloir_Store where quantity='bulk';
+
+--what are the favorate item?
+
+SELECT item,price,color From Gloir_store order by color desc limit 5;
